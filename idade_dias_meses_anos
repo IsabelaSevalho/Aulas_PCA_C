@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int idadeEmDias, anos, meses, dias;
+    printf("Informe sua idade em dias: ");
+    scanf("%d", &idadeEmDias);
+
+    anos = idadeEmDias/360;
+    meses = (idadeEmDias%360)/30;
+    dias = (idadeEmDias%360)%30;
+
+    printf("\nSua idade em anos: %d", anos);
+    printf("\nEm meses: %d", meses);
+    printf("\nEm dias: %d", dias);
+
+   /* printf("\nSua idade em anos: %d", anos,
+           "\nSua idade em meses: %d", meses,
+           "\nSua idade em dias: %d", idadeEmDias, "\n");*/
+
+    /*printf("\nSua idade em anos: %d", anos);
+    printf("\nSua idade em meses: %d", meses);
+    printf("\nSua idade em dias: %d", idadeEmDias);*/
+
+    return 0;
+}
