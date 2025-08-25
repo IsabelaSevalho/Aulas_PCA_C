@@ -1,0 +1,21 @@
+#include <stdio.h>
+/*Escreva um programa em C que solicite um determinado
+número real e mostre qual a sua parte inteira e a sua parte
+fracionária.*/
+
+int main()
+{
+    int numero;
+    printf("informe um numero: ");
+    scanf("%d", &numero);
+
+    if(numero<0){
+        printf("O valor ja eh negativo");
+    }else if(numero==0){
+        printf("Nao ha negativo de 0");
+    }else{
+        printf("Numero novo: %d", -(numero));
+    }
+
+    return 0;
+}
