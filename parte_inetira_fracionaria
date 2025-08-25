@@ -1,0 +1,19 @@
+#include <stdio.h>
+/*Escreva um programa em C que solicite um determinado
+número real e mostre qual a sua parte inteira e a sua parte
+fracionária.*/
+
+int main()
+{
+    float num, fracionaria;
+    int inteira;
+    printf("Digite um numero real: ");
+    scanf("%f", &num);
+
+    inteira = (int)num;
+    fracionaria = num- inteira;
+
+    printf("Parte inteira %d\nParte fracionaria: %f", inteira, fracionaria);
+
+    return 0;
+}
