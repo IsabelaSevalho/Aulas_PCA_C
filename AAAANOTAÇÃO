@@ -5,3 +5,52 @@ MINS1 = 120+35 = 155
 MINS2 = 180+40= 220
 
 RES = MINS2 - MINS1 = 220 - 155 = 65 OKK
+
+--------------------------------------------------------------
+                            MANIPULAÇÃO DE STRINGS
+--------------------------------------------------------------
+
+* -> para enviar o conjunto de caracteres
+ex: char *nome vai enviar o conjunto de caracteres
+
+char *funcao(){return nome}
+-------
+
+strlen("cadeia de string")  --> tamanho da string, quantidade de caracteres
+---------
+
+nome[0] == '\0' -> verifica se a primeira posiçao do nome tem \0, ou seja, vazia, identificando o final da string
+-> o seu retorno é inteiro 0 FALSO ou 1 VDD
+---------
+
+strcpy(a,b) --> o segundo parametro eh origem e o segundo destino, faz a copia de B em A
+---------
+
+strcat(a,b) --> faz a concatenação de b em a ex: a=aba b=caxi entao a=abacaxi b=caxi
+---------
+
+strcountc(nm, "a") --> CONTA QUANTOS CARACTERES (ex: "a") APARECEM NUMA STRING (nm) é uma função contadora QUE CONSTRUIMOS que deve ir de
+i=0 até nome[i]!="\0"
+---------
+
+isdigit(nome[i]) --> retorna a quantidade de digitos (0 a 9)
+--------
+
+indchr(nm, "m") --> retorna o indice da primeira linha que possui o caractere "m" FUNCAO QUE CONSTRUIMOS
+--------
+
+strpal(nm) --> FUNCAO QUE CONSTRUIMOS  enquanto o i incrementa, o j decrementa, um no iniicio e outro no final, verifica se
+invertido é igual == palindromo. Se encontra um caractere diferente ele para pq nao sera palindromo
+--------
+
+strrev(nm) --> FUNCAO QUE CONSTRUIMOS inverte a string
+--------
+
+strcmp(nm, "Viana") --> verifica se as strings sao iguais, retorna 0 ou 1
+-------
+
+strpad(nm) --> acrescenta um espaço em branco após cada caractere da string FUNCAO QUE CONSTRUIMOS
+-------
+
+strdelc(nm, "a") --> apaga todas as ocorrencias do caractere na string
+
