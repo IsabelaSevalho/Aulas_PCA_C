@@ -13,6 +13,8 @@ RES = MINS2 - MINS1 = 220 - 155 = 65 OKK
 * -> para enviar o conjunto de caracteres
 ex: char *nome vai enviar o conjunto de caracteres
 
+gets(variavel) tambpem le string, mas considera espaços e tudo
+
 char *funcao(){return nome}
 -------
 
